@@ -8,25 +8,27 @@
 .logo{
     height: 120px;
     float:left;
-    animation:giro 2.5s infinite;
+    animation:parpadeo 2.5s infinite;
     animation-timing-function:ease-in-out;
 }
-@keyframes giro{
+@keyframes parpadeo{
     0%{opacity:100%}
     50%{opacity:0%}
     100%{opacity:100%}
 }
 .texto{
-    animation: fluido 30s ease-in-out infinite;
-    background:linear-gradient(-45 deg, #E5E5E5,#63666E,#E5E5E5, #63666E);
-    background-size: 100%;
-    -webkit-text-fill-color:#63666E;
-        background-clip: text;
-    -webkit-background-clip: text;
-    text-align: center;
+    width: vh;
+    margin-top:20px;
+    display: flex;
+    align-items: center;
+    
 }
-@keyframe fluido{
-    0%{background-position:0 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0 50%}
+.texto p{
+    background-color: red;
+    height:80px;
+    box-sizing: content-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
+
